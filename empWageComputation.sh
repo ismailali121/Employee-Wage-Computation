@@ -1,1 +1,11 @@
-echo "Welcome to Employee Wage Computation Program on Master Branch"
+#!/bin/bash -x
+isPresent=1
+employeeCheck=$((RANDOM%2))
+
+if [ $isPresent -eq $employeeCheck ];
+then
+        echo "Employee is Present"
+else
+        echo "Employee is Absent"
+fi
+
